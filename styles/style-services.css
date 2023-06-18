@@ -1,0 +1,54 @@
+.services {
+    width: 100%;
+    padding: 40px 100px;
+    background-image: url(../images/services-background.jpg);
+    background-size: cover;
+}
+.services h2 {
+    color:  #08254f;
+}
+.serv-slogan {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    letter-spacing: 5px;
+    color:  #0063ae;
+}
+.card {
+    border: 4px solid #08254f;
+    border-radius: 12px;
+    height: 200px;
+    background-color: transparent;
+}
+.service-img-box{
+    height: 120px;
+    transition: height 350ms;
+}
+.card:hover .service-img-box {
+    height: 100px;
+}
+.card:hover .card-body button {
+    font-size: 35px;
+    color: #0063ae;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-body button {
+    font-size: 25px;
+    color: #08254f;
+    transition: font-size 350ms;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.icon-animation {
+    height: 68%;
+}
+.icon-web-design {
+    height: 64%;
+}

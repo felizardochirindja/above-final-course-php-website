@@ -1,0 +1,61 @@
+.edit-user-box,
+.create-account-box,
+.login-box {
+    width: 200px;
+    padding: 10px 10px;
+    position: fixed;
+    top: 55px;
+    right: 100px;
+    z-index: 2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: white;
+    background-color: #08254f;
+}
+.account-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.link-create-account {
+    text-decoration: none !important;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.link-create-account:hover {
+    text-decoration: underline !important;
+    color: #fff !important;
+}
+.create-account-box .form-group,
+.edit-user-box .form-group,
+.login-box .form-group {
+    margin-bottom: 12px;
+}
+.create-account-box label,
+.edit-user-box label,
+.login-box label {
+    margin-bottom: 3px;
+}
+.login-input {
+    width: 100%;
+    border: none;
+    outline: none !important;
+    border-radius: 0;
+    color: #fff;
+    border: 1.5px solid #fff;
+    background-color: #08254f;
+    padding: 1px 3px;
+}
+.btn-submit {
+    outline: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+    background-color: #0063ae;
+    transition: background-color 250ms;
+    margin: 12px 0 8px;
+}
+.btn-submit:hover {
+    color: #0063ae;
+    background-color: #fff;
+}

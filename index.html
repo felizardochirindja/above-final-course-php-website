@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+
+    <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css">
+
+    <!-- My Css -->
+
+    <link rel="stylesheet" href="./styles/style-header.css">
+    <link rel="stylesheet" href="./styles/style-login.css">
+    <link rel="stylesheet" href="./styles/style-about.css">
+    <link rel="stylesheet" href="./styles/style-services.css">
+    <link rel="stylesheet" href="./styles/style-contacts.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
+    
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+
+        <!-- bara de navegacao -->
+
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand" href="index.php">
+                <img src="./icons/bravo-solution-logo.png" alt="" srcset="" class="bravo-solution-logo">
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-items">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menu de navegacao -->
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-items">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>INICIO</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>SOBRE</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>SERVIÇOS</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><span>CONTACTOS</span></a>
+                    </li>
+                    
+                    <!-- mobile login/account button -->
+                    <li class="nav-item">
+                        <button class="button-login mobile-button-login" type="submit">Entrar</button>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="button-login desktop-button-login" type="submit">Entrar</button>
+        </nav>
+
+        <!-- login popup -->
+
+        <div class="login-box">
+            <div class="pop-up-buttons">
+                <h4 class="text-center">Entrar</h4>
+
+                <button type="button" class="close btn-close-popup">
+                    <span>x</span>
+                </button>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="usr_name" class=""><h6>Nome</h6></label>
+                    <span class="error-message"></span>
+                    <input type="text" name="usr_name" id="usr_name" class="login-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="usr_password" class=""><h6>Senha</h6></label>
+                    <span class="error-message"></span>
+                    <input type="text" name="usr_password" id="usr_password" class="login-input">
+                </div>
+                
+                <a href="#" class="link-create-account mb-2">nao tem conta?</a>
+
+                <input type="submit" value="Entrar" name="login" class="btn-submit p-1">
+            </form>
+        </div>
+
+        <!-- criar conta -->
+
+        <div class="create-account-box">
+            <div class="pop-up-buttons">
+                <h4 class="text-center">Entrar</h4>
+
+                <button type="button" class="close btn-close-popup">
+                    <span>x</span>
+                </button>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="usr_name" class=""><h6>Nome</h6></label>
+                    <span class="error-message"></span>
+                    <input type="text" name="usr_name" id="usr_name" class="login-input">
+                </div>
+                
+                <div class="form-group">
+                    <label for="usr_password" class=""><h6>Senha</h6></label>
+                    <span class="error-message"></span>
+                    <input type="text" name="usr_password" id="usr_password" class="login-input">
+                </div>
+
+                <input type="submit" value="Criar" name="criar_conta" class="btn-submit p-1">
+            </form>
+        </div>
+        <!-- slider -->
+
+        <section class="slider">
+            <div class="slider-content">
+                <h1>Agência De Design</h1>
+            </div>
+
+            <!-- Missao, Visao, Valores -->
+
+            <div class="box-container">
+                <div class="box-slider">
+                    <h2>Missão</h2>
+                    
+                    <p>Ser a empresa que melhor entende e satisfaz as necessidades e que assume responsabilidade com os seus clientes.</p>
+                </div>
+                <div class="box-slider">
+                    <h2>Visão</h2>
+
+                    <p>Garantir Serviços modernos e de alta qualidade</p>
+                </div>
+                <div class="box-slider">
+                    <h2>Valores</h2>
+
+                    <p>Inovação <br> Qualidade <br> Diversidade <br> Colaboração<br> Responsabilidade</p>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- sobre nos -->
+
+    <section class="about">
+        <h2>Sobre nós</h2>
+        <p>A Bravo Solution oferece Design Gráfico Profissional por uma taxa fixa, com o objetivo de ajudar clientes a comunicar de forma eficaz e profissional e facilitar o crescimento do seu negócio. De Startups a PMEs, ONGs e Agências de Marketing, todas enfrentam desafios comuns quando se trata de design gráfico. Muitas vezes, não têm a capacidade de encontrar e integrar designers que consigam atender as suas necessidades e em alguns casos, as restrições orçamentárias também são um problema.
+        </p>
+    </section>
+
+    <!-- servicos -->
+
+    <section class="services">
+        <h2 class="text-center mb-5">SERVIÇOS</h2>
+
+        <div class="row first-row mb-5">
+            <div class="col-md-8">
+                <p class="serv-slogan">A SOLUÇÃO PARA<br>
+                    OS SEUS SERVIÇOS<br>
+                    DE DESIGN
+                </hp>
+            </div>
+
+            <!-- Logitipos -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="service-img-box text-center">
+                            <img src="./icons/icon-logo.png" class="h-75 icon-logo">
+                        </div>
+
+                        <div class="text-center">
+                            <button class="button-logo">LOGOTIPOS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row second-row">
+            <!-- Animacao -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="service-img-box text-center">
+                            <img src="./icons/icon-animation.png" class="icon-animation">
+                        </div>
+                            <div class="text-center">
+                            <button class="button-animation">ANIMAÇÃO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ilustracao -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="service-img-box text-center">
+                            <img src="./icons/icon-ilustration.png" class="h-75">
+                        </div>
+                        <div class="text-center">
+                            <button class="button-ilustration">ILUSTRAÇÃO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- web design -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="service-img-box text-center">
+                            <img src="./icons/icon-webdesign.png" class="icon-web-design">
+                        </div>
+
+                        <div class="text-center">
+                            <button class="button-web-design">WEB DESIGN</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contactos -->
+
+    <section class="contacts">
+        <h2 class="text-center mb-5">CONTACTOS</h2>
+
+        <div class="row contacts-box mx-auto">
+            <div class="col-md-6 contact-left-box">
+
+                <!-- formulario -->
+                <form>
+                    <div class="form-group">
+                        <label for="name" class=""><h6>Nome</h6></label>
+                        <span class="error-message"></span>
+                        <input type="text" name="name" id="name" class="text-field input">
+                    </div>
+                            
+                    <div class="form-group">
+                        <label for="email" class=""><h6>Email</h6></label>
+                        <span class="error-message"></span>
+                        <input type="email" name="email" id="email" class="text-field input">
+                    </div>
+                        
+                    <div class="form-group">
+                        <label for="message" class="mb-3"><h6>Mensagem</h6></label>
+                        <span class="error-message"></span>
+                        <textarea name="message" id="message" class="input"></textarea>
+                    </div>
+                        
+                    <input type="submit" value="Enviar" name="send-msg" class="btn-submit p-1">
+                </form>
+            </div>
+
+            <div class="col-md-6 contact-right-box">
+                <div class="location-info contact-info">
+                    <h6>Localização</h6>
+                    <p>Av. de Moçambique <br> N 258</p>
+                </div>
+
+                <div class="email-info contact-info">
+                    <h6>Email</h6>
+                    <p>bravo@solution.co.mz <br> info@solution.co.mz</p>  
+                </div>
+
+                <div class="tel-info contact-info">
+                    <h6>Telefone</h6>
+                    <p>+258 84 55 47 966 <br> +258 87 55 47 966</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rodape -->
+
+    <footer>
+
+    </footer>
+
+
+    <!-- Modals -->
+
+    <!-- Logotipo -->
+    <div class="my-modal modal-logo fixed-top">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">LOGOTIPO</h4>
+
+                    <button type="button" class="close btn-modal-close">
+                        <span>x</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Criação de logotipos modernos respeitando a identidade visual os desejos da empresa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animacao -->
+    <div class="my-modal modal-animation fixed-top">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ANIMACÃO</h4>
+
+                    <button type="button" class="close btn-modal-close">
+                        <span>x</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Animações com um maximo de 1 minuto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ilustracao -->
+    <div class="my-modal modal-ilustration fixed-top">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">ILUSTRAÇÃO</h4>
+
+                    <button type="button" class="close btn-modal-close">
+                        <span>x</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Desenho de ilustrações ou artes abstractas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- web design -->
+
+    <div class="my-modal modal-web-design fixed-top">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">WEB DESIGN</h4>
+
+                    <button type="button" class="close btn-modal-close">
+                        <span>x</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Desenho de páginas web modernas, incluindo a parte responsiva.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $(".login-box").hide();
+            $(".edit-user-box").hide();
+            $(".create-account-box").hide();
+
+            // modals
+            $(".modal-logo").hide();
+            $(".modal-animation").hide();
+            $(".modal-ilustration").hide();
+            $(".modal-sdajgas").hide();
+            $(".modal-web-design").hide();
+
+            // mostrar o formulario do login
+            $(".button-login").click(function(){
+                $(".login-box").show();
+                $(".create-account-box").hide();
+            });
+
+            // fechar formularios
+            $(".btn-close-popup").click(function(){
+                $(".create-account-box").hide();
+                $(".login-box").hide();
+                $(".edit-user-box").hide();
+            });
+
+            // mostrar o formulario da edicao dos dados do usuario
+            $(".button-login-conta").click(function(){
+                $(".edit-user-box").show();
+            });
+
+            $(".link-create-account").click(function(){
+                $(".login-box").hide();
+                $(".create-account-box").show();
+            });
+
+            // fechar modal
+            $(".btn-modal-close").click(function(){
+                $(".my-modal").hide();
+            });
+
+            // logitipo
+            $(".button-logo").click(function(){
+                $(".modal-logo").show();
+            });
+
+            // Animacao
+            $(".button-animation").click(function(){
+                $(".modal-animation").show();
+            });
+
+            // Ilustracao
+            $(".button-ilustration").click(function(){
+                $(".modal-ilustration").show();
+            });
+
+            // web design
+            $(".button-web-design").click(function(){
+                $(".modal-web-design").show();
+            });
+        });
+    </script>
+</body>
+</html>
